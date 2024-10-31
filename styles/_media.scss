@@ -1,0 +1,375 @@
+@media screen and (max-width: 620px) {
+
+    header {
+        padding: 0 !important;
+    }
+
+    // .right-header {
+    //     // padding: 0rem 2rem !important;
+
+    //     .name {
+    //         font-size: 2rem !important;
+    //     }
+
+    //     p {
+    //         font-size: 1.1rem;
+    //     }
+    // }
+
+
+    .theme-btn {
+        top: 2%;
+        right: 3%;
+    }
+
+    .header-content {
+        grid-template-columns: 1fr;
+        padding-bottom: 5.5rem;
+
+    }
+
+    .left-header {
+
+        .h-shape {
+            display: none;
+        }
+    }
+
+    .right-header {
+        grid-row: 1;
+        width: 93% !important;
+        margin: 0 auto;
+
+        .name {
+            font-size: 2rem !important;
+        }
+
+        p {
+            font-size: 1.1rem;
+        }
+    }
+
+    .header-content .left-header .image {
+        margin: 0 auto;
+        width: 93%;
+
+        img {
+            filter: grayscale(0);
+        }
+    }
+
+    .section {
+        padding: 2rem 1.4rem !important;
+        padding-top: 3rem !important;
+    }
+
+    .blogs {
+        grid-template-columns: 1fr !important;
+    }
+
+    .portfolios {
+        grid-template-columns: 1fr !important;
+
+        .portfolio-item {
+            display: flex;
+            flex-direction: column;
+
+            &:nth-child(even) {
+                flex-direction: column;
+            }
+        }
+    }
+
+    .timeline {
+        padding: 0 1rem;
+    }
+
+
+    // my
+    .about-container {
+        // h4 {
+        //     font-size: 1.7rem !important;
+        // }
+    }
+
+    h4 {
+        font-size: 1.6rem !important;
+    }
+
+    .skills {
+        padding: 0 1.5rem !important;
+    }
+
+
+    .timeline-item {
+        h5 {
+            font-size: 1.2rem !important;
+
+            span {
+                font-size: 1.1rem !important;
+            }
+        }
+    }
+
+    .blog-text {
+        h4 {
+            font-size: 1.3rem !important;
+        }
+    }
+
+    // .controlls {
+    //     top: auto;
+    //     bottom: 0;
+    //     flex-direction: row;
+    //     justify-content: center;
+    //     left: 50%;
+    //     transform: translateX(-50%) !important;
+    //     width: 100%;
+    //     background-color: var(--color-grey-5);
+
+    //     .control {
+    //         margin: .4rem 1rem;
+
+    //         &:hover {
+
+    //             i {
+    //                 opacity: 1;
+    //             }
+
+    //             .txt {
+    //                 opacity: 0;
+    //             }
+
+    //         }
+    //     }
+    // }
+
+    .controlls {
+        padding-bottom: .4rem;
+    }
+
+    .control {
+        width: 48px !important;
+        height: 48px !important;
+        margin: .4rem .9rem !important;
+    }
+
+    .content-sub-h {
+        font-size: 1.4rem !important;
+    }
+
+
+}
+
+@media screen and (max-width: 768px) {
+    .section {
+        padding: 6rem 3rem;
+    }
+
+    .about-container {
+        grid-template-columns: 1fr;
+
+        .right-about {
+            grid-template-columns: 1fr;
+            padding-top: 2.3rem;
+        }
+
+        .left-about {
+            padding-right: 0;
+
+            p {
+                padding-left: 0;
+            }
+        }
+    }
+
+    .timeline {
+        grid-template-columns: 1fr;
+        padding-bottom: 6rem;
+    }
+
+    .about-stats {
+        .progress-bars {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    .portfolios {
+        grid-template-columns: 1fr;
+        padding-bottom: 6rem;
+    }
+
+    .blogs {
+        /* grid-template-columns: 1fr 1fr; */
+        grid-template-columns: 1fr;
+        padding-bottom: 6rem;
+    }
+
+    .section {
+        padding: 2rem 2.4rem;
+    }
+
+
+    .main-title {
+        h2 {
+            font-size: 2rem;
+
+            span {
+                font-size: 2rem;
+            }
+
+            .bg-text {
+                font-size: 3.3rem;
+            }
+        }
+    }
+
+}
+
+
+@media screen and (max-width: 1365px) {
+
+
+    .contact-content-con {
+        flex-direction: column;
+        padding-bottom: 6rem;
+
+        .right-contact {
+            margin-left: 0;
+            margin-top: 2.4rem;
+        }
+    }
+
+    .contact-content-con .right-contact .i-c-2 {
+        flex-direction: column;
+    }
+
+    .contact-content-con .right-contact .i-c-2 :last-child {
+        margin-left: 0 !important;
+        margin-top: 1.5rem;
+    }
+}
+
+
+@media screen and (max-width: 1073px) {
+    header {
+        /* padding: 4rem !important; */
+    }
+
+    .section {
+        /* padding: 5rem 6rem; */
+    }
+
+    .about-container {
+        grid-template-columns: 1fr;
+
+        .right-about {
+            padding-top: 2.5rem;
+        }
+    }
+
+    .portfolios {
+        grid-template-columns: 1fr !important;
+
+        .portfolio-item {
+            display: flex;
+            flex-direction: column;
+
+            .portfolio-image {
+                img {
+                    width: 100%;
+                }
+            }
+
+            &:nth-child(even) {
+                flex-direction: column;
+            }
+        }
+    }
+
+    .blogs {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    /* .main-title {
+        h2 {
+            font-size: 3.5rem;
+
+            span {
+                font-size: 3.5rem;
+                .bg-text: 4rem;
+            }
+        }
+    } */
+}
+
+
+@media screen and (max-width: 925px) {
+    header {
+        padding: 0;
+    }
+
+    header .right-header {
+        /* padding: 2rem !important; */
+        padding: 0 !important;
+    }
+
+    .header-content {
+        grid-template-columns: 1fr;
+        padding-bottom: 5.5rem;
+
+    }
+
+    .left-header {
+
+        .h-shape {
+            display: none;
+        }
+    }
+
+    .right-header {
+        grid-row: 1;
+        width: 90%;
+        margin: 0 auto;
+
+        .name {
+            font-size: 2.3rem;
+        }
+    }
+
+    .header-content .left-header .image {
+        margin: 0 auto;
+        width: 90%;
+    }
+
+    .section {
+        padding: 6rem 4rem;
+    }
+
+    .controlls {
+        top: auto;
+        bottom: 0;
+        flex-direction: row;
+        justify-content: center;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+        background-color: var(--color-grey-5);
+
+        .control {
+            margin: .4rem 1rem;
+
+            &:hover {
+
+                i {
+                    opacity: 1;
+                }
+
+                .txt {
+                    opacity: 0;
+                }
+
+            }
+        }
+    }
+}
