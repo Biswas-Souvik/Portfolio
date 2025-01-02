@@ -72,8 +72,6 @@ function PageTransitions() {
 
 PageTransitions();
 
-// trying
-
 function del() {
     document.getElementById("textarea1").value = '';
 }
