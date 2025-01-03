@@ -4,6 +4,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Prompt:wght@100;200;300;400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400&display=swap");
+html {
+  scroll-behavior: smooth;
+}
+
 .style-p {
   padding-left: 1rem;
   color: var(--color-read) !important;
@@ -37,6 +41,7 @@
 }
 
 :root {
+  --top-btn: #dbe1e8;
   --color-primary: #191d2b;
   --color-primary-inverse: #ECECEC;
   --color-primary-inverse: #82878b;
@@ -67,6 +72,7 @@
 .light-mode {
   --thm-btn: #9BABB8;
   --thm-btn: #737c9f;
+  --top-btn: #ECECEC;
   --color-primary: #EEEEEE;
   --color-primary: #ECECEC;
   --color-primary-inverse: #191d21;
@@ -134,56 +140,35 @@ header {
 section {
   min-height: 100vh;
   width: 100%;
-  position: absolute;
-  left: 0;
-  top: 0;
   padding: 3rem 15rem;
 }
 
 .section {
-  transform: translateY(-100%) scale(0);
   transition: all 0.4s ease-in-out;
   background-color: var(--color-primary);
 }
 
 .sec1 {
-  display: none;
-  transform: translateY(0) scale(1);
+  display: block;
 }
 
 .sec2 {
-  display: none;
-  transform: translateY(0) scale(1);
+  display: block;
+  margin-top: 3rem !important;
 }
 
 .sec3 {
-  display: none;
+  display: block;
   padding: 3rem 10rem !important;
   padding-left: 7rem !important;
-  transform: translateY(0) scale(1);
 }
 
 .sec4 {
-  display: none;
-  transform: translateY(0) scale(1);
+  display: block;
 }
 
 .sec5 {
-  display: none;
-  transform: translateY(0) scale(1);
-}
-
-.active {
   display: block;
-  animation: scaleAnim 0.8s ease-in-out;
-}
-@keyframes scaleAnim {
-  0% {
-    transform: translateY(-100%) scaleY(0);
-  }
-  100% {
-    transform: translateY(0) scaleY(1);
-  }
 }
 
 .controlls {
@@ -196,13 +181,6 @@ section {
   align-items: center;
   justify-content: center;
   transform: translateY(-50%);
-}
-.controlls .active-btn {
-  background-color: var(--color-secondary2) !important;
-  transition: all 0.4s ease-in-out;
-}
-.controlls .active-btn i {
-  color: var(--color-primary) !important;
 }
 .controlls .control {
   cursor: pointer;
@@ -222,13 +200,46 @@ section {
   border-radius: 50%;
 }
 .controlls .control:hover {
-  background-color: var(--color-grey-2);
+  transition: all 0.4s ease-in-out;
+  background-color: var(--color-secondary2) !important;
 }
 .controlls .control:hover i {
   opacity: 0;
 }
 .controlls .control:hover .txt {
   opacity: 1;
+}
+
+.top-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 8%;
+  right: 4.5%;
+  cursor: pointer;
+}
+.top-btn a {
+  background-color: var(--color-grey-4);
+  width: 2.4rem;
+  height: 2.4rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: var(--box-shadow-1);
+  transition: all 0.4s ease-in-out;
+}
+.top-btn a i {
+  transition: all 0.4s ease-in-out;
+  color: var(--top-btn);
+}
+.top-btn a:hover {
+  transition: all 0.4s ease-in-out;
+  background-color: var(--color-secondary2) !important;
+}
+.top-btn a:hover i {
+  color: var(--color-primary);
 }
 
 .theme-btn {
@@ -1061,5 +1072,9 @@ section {
   }
   .controlls .control:hover .txt {
     opacity: 0;
+  }
+  .top-btn {
+    bottom: 12%;
+    right: 5.5%;
   }
 }/*# sourceMappingURL=style.css.map */

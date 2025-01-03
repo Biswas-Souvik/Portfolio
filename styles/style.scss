@@ -9,6 +9,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Prompt:wght@100;200;300;400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400&display=swap');
 
+html {
+    scroll-behavior: smooth;
+}
+
 // styling p
 .style-p {
     // border: 1px solid red;
@@ -50,6 +54,7 @@
 
 
 :root {
+    --top-btn: #dbe1e8;
     --color-primary: #191d2b;
     --color-primary-inverse: #ECECEC;
     --color-primary-inverse: #82878b;
@@ -80,6 +85,7 @@
 .light-mode {
     --thm-btn: #9BABB8;
     --thm-btn: #737c9f;
+    --top-btn: #ECECEC;
     // --color-primary: #F5F5F5;
     // --color-primary: #E3F6FF;
     --color-primary: #EEEEEE;
@@ -162,64 +168,70 @@ header {
 section {
     min-height: 100vh;
     width: 100%;
-    position: absolute;
-    left: 0;
-    top: 0;
+    // position: absolute;
+    // left: 0;
+    // top: 0;
     padding: 3rem 15rem;
 }
 
 .section {
-    transform: translateY(-100%) scale(0);
+    // transform: translateY(-100%) scale(0);
     transition: all .4s ease-in-out;
     background-color: var(--color-primary);
 }
 
 .sec1 {
-    display: none;
-    transform: translateY(0) scale(1);
+    // display: none;
+    display: block;
+    // transform: translateY(0) scale(1);
     // background-color: rgb(18, 225, 240);
 }
 
 .sec2 {
-    display: none;
-    transform: translateY(0) scale(1);
+    // display: none;
+    display: block;
+    margin-top: 3rem !important;
+    // transform: translateY(0) scale(1);
     // background-color: slateblue;
 }
 
 .sec3 {
-    display: none;
+    // display: none;
+    display: block;
     padding: 3rem 10rem !important;
     padding-left: 7rem !important;
-    transform: translateY(0) scale(1);
+    // transform: translateY(0) scale(1);
     // background-color: rgb(90, 205, 100);
 }
 
 .sec4 {
-    display: none;
-    transform: translateY(0) scale(1);
+    // display: none;
+    display: block;
+    // transform: translateY(0) scale(1);
     // background-color: rgb(226, 32, 32);
 }
 
 .sec5 {
-    display: none;
-    transform: translateY(0) scale(1);
-}
-
-.active {
+    // display: none;
     display: block;
-    animation: scaleAnim .8s ease-in-out;
-
-    @keyframes scaleAnim {
-        0% {
-            transform: translateY(-100%) scaleY(0);
-        }
-
-        100% {
-            transform: translateY(0) scaleY(1);
-        }
-
-    }
+    // transform: translateY(0) scale(1);
 }
+
+// .active {
+//     // display: block;
+//     animation: scaleAnim .8s ease-in-out;
+
+//     @keyframes scaleAnim {
+//         0% {
+//             transform: translateY(-100%) scaleY(0);
+//         }
+
+//         100% {
+//             transform: translateY(0) scaleY(1);
+//         }
+
+//     }
+// }
 
 // Controls
 .controlls {
@@ -233,15 +245,14 @@ section {
     justify-content: center;
     transform: translateY(-50%);
 
-    .active-btn {
-        background-color: var(--color-secondary2) !important;
-        transition: all .4s ease-in-out;
+    // .active-btn {
+    //     background-color: var(--color-secondary2) !important;
+    //     transition: all .4s ease-in-out;
 
-        i {
-            // color: var(--color-white) !important;
-            color: var(--color-primary) !important;
-        }
-    }
+    //     i {
+    //         color: var(--color-primary) !important;
+    //     }
+    // }
 
     .control {
         // padding: 1rem;
@@ -284,7 +295,8 @@ section {
         // }
 
         &:hover {
-            background-color: var(--color-grey-2);
+            transition: all .4s ease-in-out;
+            background-color: var(--color-secondary2) !important;
 
             i {
                 opacity: 0;
@@ -294,6 +306,42 @@ section {
                 opacity: 1;
             }
 
+        }
+    }
+}
+
+.top-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 8%;
+    right: 4.5%;
+    cursor: pointer;
+
+    a {
+        background-color: var(--color-grey-4);
+        width: 2.4rem;
+        height: 2.4rem;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: var(--box-shadow-1);
+        transition: all .4s ease-in-out;
+
+        i {
+            transition: all .4s ease-in-out;
+            color: var(--top-btn);
+        }
+
+        &:hover {
+            transition: all .4s ease-in-out;
+            background-color: var(--color-secondary2) !important;
+
+            i {
+                color: var(--color-primary);
+            }
         }
     }
 }
