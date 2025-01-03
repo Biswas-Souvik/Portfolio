@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Observer</title>
+    <style>
+        .hidden {
+            opacity: 0;
+            transition: opacity 1s;
+        }
+
+        .show {
+            opacity: 1;
+        }
+
+        div {
+            height: 100px;
+            margin: 50px 0;
+            background: lightblue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="hidden">Block 1</div>
+    <div class="hidden">Block 2</div>
+    <div class="hidden">Block 3</div>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            console.log('Script is running');
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach((entry) => {
+                    console.log(entry);
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('show');
+                    }
+                });
+            });
+
+            const hiddenElements = document.querySelectorAll('.hidden');
+            console.log(hiddenElements);
+            hiddenElements.forEach((el) => observer.observe(el));
+        });
+    </script>
+</body>
+
+</html>

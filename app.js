@@ -97,3 +97,4 @@ function clearText() {
     setTimeout(del, 2000);
 }
 
+
