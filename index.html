@@ -297,9 +297,6 @@
           My <span>Portfolio</span><span class="bg-text">My&nbsp;Work</span>
         </h2>
       </div>
-      <!-- <p class="port-text">
-                Here is some of my work that I've done in various programming languages.
-            </p> -->
       <h4 class="port-text">Some of my work</h4>
       <div class="portfolios">
 
@@ -532,12 +529,7 @@
                   <span class="btn-text writing-body">
                     < Send />
                   </span>
-                  <!-- <span class="btn-icon"><i class="fa-solid fa-paper-plane"></i></span> -->
                   <script src="https://cdn.lordicon.com/bhenfmcm.js"></script>
-                  <!-- <lord-icon src="https://cdn.lordicon.com/gzmgulpl.json" trigger="loop" delay="1570"
-                                        colors="outline:#848484,primary:#4bb3fd,secondary:#ebe6ef"
-                                        style="width:60px;height:60px">
-                                    </lord-icon> -->
 
                   <lord-icon src="https://cdn.lordicon.com/xcctctro.json" trigger="loop" delay="1000"
                     colors="primary:#545454,secondary:#f9c9c0,tertiary:#ebe6ef,quaternary:#4bb3fd"
@@ -617,13 +609,14 @@
   </div>
 
   <script src="./app.js"></script>
+
   <!-- -=-=-=-=-=-=-=-=-=- for scrolling animation -=-=-=-=-=-=-=-=-=- -->
-  <!-- <script>
+  <script>
     document.addEventListener('DOMContentLoaded', () => {
-      console.log('Script is running');
+
       const observer = new IntersectionObserver((entries) => {
         entries.forEach((entry) => {
-          console.log(entry);
+
           if (entry.isIntersecting) {
             entry.target.classList.add('show');
           } else {
@@ -631,35 +624,8 @@
           }
         });
       });
-
-      const hiddenElements = document.querySelectorAll('.hidden');
-      console.log(hiddenElements);
-      hiddenElements.forEach((el) => observer.observe(el));
-    });
-  </script> -->
-  <script>
-    document.addEventListener('DOMContentLoaded', () => {
-      console.log('Script is running');
-
-      // Create an IntersectionObserver
-      const observer = new IntersectionObserver((entries) => {
-        entries.forEach((entry) => {
-          console.log(entry);
-
-          // Check if the element is intersecting
-          if (entry.isIntersecting) {
-            entry.target.classList.add('show'); // Add .show to make the element visible
-          } else {
-            entry.target.classList.remove('show'); // Remove .show when it leaves the viewport
-          }
-        });
-      });
-
-      // Select all elements with .hidden-left or .hidden-right
       const hiddenElements = document.querySelectorAll('.hidden-left, .hidden-right');
-      console.log(hiddenElements);
 
-      // Observe each hidden element
       hiddenElements.forEach((el) => observer.observe(el));
     });
   </script>

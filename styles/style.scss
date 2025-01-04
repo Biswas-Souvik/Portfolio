@@ -280,24 +280,6 @@ section {
             border-radius: 50%;
         }
 
-        // .txt {
-        //     position: absolute;
-        //     padding: 1rem;
-        //     opacity: 0;
-        //     transition: all .4s ease-in-out;
-        //     font-size: .8rem;
-        //     color: var(--color-black);
-        //     pointer-events: none;
-        //     text-shadow: var(--box-shadow-1);
-        // }
-
-        // i {
-        //     font-size: 1.2rem;
-        //     color: var(--color-grey-55);
-        //     pointer-events: none; // it means it does not do anything on mouse click
-        //     transition: all .4s ease-in-out;
-        // }
-
         &:hover {
             transition: all .4s ease-in-out;
             background-color: var(--color-secondary2) !important;
@@ -423,7 +405,6 @@ section {
             z-index: 1;
             clip-path: polygon(0 0, 45% 0, 75% 100%, 0% 100%);
             clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
-            // clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
         }
 
         .image {
@@ -518,53 +499,6 @@ section {
             }
 
         }
-
-
-
-        // .about-item {
-        //     border: 1px solid var(--color-grey-5);
-        //     border-radius: 5px;
-        //     transition: all .4s ease-in-out;
-        //     box-shadow: 1px 2px 15px rgba(0, 0, 0, .1);
-
-        //     &:hover {
-        //         cursor: default;
-        //         transform: translateY(-5px);
-        //         border: 1px solid var(--color-secondary2);
-        //         box-shadow: 1px 4px 15px rgba(0, 0, 0, .32);
-        //     }
-
-        //     .abt-text {
-        //         padding: 1.5rem;
-        //         display: flex;
-        //         flex-direction: column;
-
-        //         .large-text {
-        //             font-size: 3rem;
-        //             font-weight: 700;
-        //             color: var(--color-secondary2);
-        //         }
-
-        //         .small-text {
-        //             padding-left: 3rem;
-        //             position: relative;
-        //             text-transform: uppercase;
-        //             font-size: 1.2rem;
-        //             color: var(--color-grey-1);
-        //             letter-spacing: 2px;
-
-        //             &::before {
-        //                 content: '';
-        //                 position: absolute;
-        //                 left: 0;
-        //                 top: 15px;
-        //                 width: 2rem;
-        //                 height: 4px;
-        //                 background-color: var(--color-grey-5);
-        //             }
-        //         }
-        //     }
-        // }
     }
 
     .left-about {
@@ -942,40 +876,6 @@ section {
                 }
             }
         }
-
-        // .contact-icon {
-        //     display: flex;
-        //     margin-top: 2rem;
-
-        //     a {
-        //         display: flex;
-        //         align-items: center;
-        //         color: var(--color-white);
-        //         background-color: var(--color-grey-5);
-        //         cursor: pointer;
-        //         justify-content: center;
-        //         width: 50px;
-        //         height: 50px;
-        //         border-radius: 50%;
-        //         margin: 0 .4rem;
-        //         transition: all .4s ease-in-out;
-
-        //         &:hover {
-        //             background-color: var(--color-secondary2);
-
-        //             i {
-        //                 color: var(--color-primary);
-        //             }
-        //         }
-
-        //         i {
-        //             display: flex;
-        //             align-items: center;
-        //             justify-content: center;
-        //             font-size: 1.1rem;
-        //         }
-        //     }
-        // }
     }
 
     .right-contact {
@@ -1165,49 +1065,7 @@ section {
     }
 }
 
-// --------------- scroll animation ----------------
-// @keyframes appear {
-//     from {
-//         opacity: 0;
-//         scale: 0.5;
-//         // transform: translateX(100px);
-//     }
-
-//     to {
-//         opacity: 1;
-//         scale: 1;
-//         // transform: translateX(0px);
-//     }
-// }
-
-// .section {
-//     animation: appear linear;
-//     animation-timeline: view();
-//     animation-range: entry 0% cover 20%;
-// }
-
-// .header-content {
-//     .left-header {
-//         animation: appear linear;
-//         animation-timeline: view();
-//         animation-range: entry 0% cover 20%;
-//     }
-
-//     .right-header {
-//         animation: appear linear;
-//         animation-timeline: view();
-//         animation-range: entry 0% cover 20%;
-//     }
-// }
-
-
-// .hidden {
-//     opacity: 0;
-//     filter: blur(8px);
-//     transform: translateX(-100%);
-//     transition: all .7s;
-// }
-
+// -=-=-=-=-=-=-=-=-=- for scrolling animation -=-=-=-=-=-=-=-=-=- 
 .hidden-left {
     opacity: 0;
     filter: blur(8px);

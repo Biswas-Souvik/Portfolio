@@ -1062,23 +1062,12 @@ section {
   .blogs {
     grid-template-columns: 1fr 1fr;
   }
-  /* .main-title {
-      h2 {
-          font-size: 3.5rem;
-
-          span {
-              font-size: 3.5rem;
-              .bg-text: 4rem;
-          }
-      }
-  } */
 }
 @media screen and (max-width: 925px) {
   header {
     padding: 0;
   }
   header .right-header {
-    /* padding: 2rem !important; */
     padding: 0 !important;
   }
   .header-content {
