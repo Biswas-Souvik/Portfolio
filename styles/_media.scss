@@ -1,20 +1,14 @@
+@media(prefers-reduced-motion) {
+    .hidden {
+        transition: none;
+    }
+}
+
 @media screen and (max-width: 620px) {
 
     header {
         padding: 0 !important;
     }
-
-    // .right-header {
-    //     // padding: 0rem 2rem !important;
-
-    //     .name {
-    //         font-size: 2rem !important;
-    //     }
-
-    //     p {
-    //         font-size: 1.1rem;
-    //     }
-    // }
 
 
     .theme-btn {
@@ -60,7 +54,30 @@
 
     .section {
         padding: 2rem 1.4rem !important;
-        padding-top: 3rem !important;
+    }
+
+    .sec1 {
+        padding-top: 0 !important;
+    }
+
+    .sec2 {
+        margin-top: 0 !important;
+        padding-top: 0 !important;
+    }
+
+    .sec3 {
+        margin-top: 0 !important;
+        padding-top: 0 !important;
+    }
+
+    .sec4 {
+        margin-top: 0 !important;
+        padding-top: 0 !important;
+    }
+
+    .sec5 {
+        margin-top: 0 !important;
+        padding-top: 0 !important;
     }
 
     .blogs {
@@ -117,33 +134,6 @@
         }
     }
 
-    // .controlls {
-    //     top: auto;
-    //     bottom: 0;
-    //     flex-direction: row;
-    //     justify-content: center;
-    //     left: 50%;
-    //     transform: translateX(-50%) !important;
-    //     width: 100%;
-    //     background-color: var(--color-grey-5);
-
-    //     .control {
-    //         margin: .4rem 1rem;
-
-    //         &:hover {
-
-    //             i {
-    //                 opacity: 1;
-    //             }
-
-    //             .txt {
-    //                 opacity: 0;
-    //             }
-
-    //         }
-    //     }
-    // }
-
     .controlls {
         padding-bottom: .4rem;
     }
@@ -163,7 +153,7 @@
 
 @media screen and (max-width: 768px) {
     .section {
-        padding: 6rem 3rem;
+        padding: 0rem 2.4rem;
     }
 
     .about-container {
@@ -203,10 +193,6 @@
         /* grid-template-columns: 1fr 1fr; */
         grid-template-columns: 1fr;
         padding-bottom: 6rem;
-    }
-
-    .section {
-        padding: 2rem 2.4rem;
     }
 
 
@@ -290,17 +276,6 @@
     .blogs {
         grid-template-columns: 1fr 1fr;
     }
-
-    /* .main-title {
-        h2 {
-            font-size: 3.5rem;
-
-            span {
-                font-size: 3.5rem;
-                .bg-text: 4rem;
-            }
-        }
-    } */
 }
 
 
@@ -310,7 +285,6 @@
     }
 
     header .right-header {
-        /* padding: 2rem !important; */
         padding: 0 !important;
     }
 
@@ -334,6 +308,7 @@
 
         .name {
             font-size: 2.3rem;
+            margin-top: 0rem !important;
         }
     }
 
@@ -343,7 +318,12 @@
     }
 
     .section {
-        padding: 6rem 4rem;
+        padding: 0rem 4rem;
+        margin-top: 1rem;
+    }
+
+    .sec1 {
+        margin-top: 4rem;
     }
 
     .controlls {
@@ -371,5 +351,10 @@
 
             }
         }
+    }
+
+    .top-btn {
+        bottom: 12%;
+        right: 5.5%;
     }
 }
