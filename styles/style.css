@@ -43,12 +43,12 @@ html {
 :root {
   --top-btn: #dbe1e8;
   --color-primary: #191d2b;
-  --color-primary-inverse: #ECECEC;
+  --color-primary-inverse: #ececec;
   --color-primary-inverse: #82878b;
-  --color-secondary: #27AE60;
-  --color-secondary1: #2ECBE9;
-  --color-secondary2: #FFEA20;
-  --color-white: #FFFFFF;
+  --color-secondary: #27ae60;
+  --color-secondary1: #2ecbe9;
+  --color-secondary2: #ffea20;
+  --color-white: #ffffff;
   --color-black: #000;
   --color-grey0: #f8f8f8;
   --color-grey-1: #dbe1e8;
@@ -59,35 +59,35 @@ html {
   --color-grey-50: #373b42;
   --color-grey-55: #f8f8f8;
   --color-grey-6: #12181b;
-  --color-p1: #BFACE2;
-  --color-p2: #03C988;
-  --color-read: #C9EEFF;
-  --thm-btn: #FAF0E4;
-  --color-port-link: #2B2730;
+  --color-p1: #bface2;
+  --color-p2: #03c988;
+  --color-read: #c9eeff;
+  --thm-btn: #faf0e4;
+  --color-port-link: #2b2730;
   --box-shadow-port: rgba(182, 182, 182, 0.2);
   --br-sm-2: 14px;
   --box-shadow-1: 0 3px 15px rgba(0, 0, 0, 0.3);
 }
 
 .light-mode {
-  --thm-btn: #9BABB8;
+  --thm-btn: #9babb8;
   --thm-btn: #737c9f;
-  --top-btn: #ECECEC;
-  --color-primary: #EEEEEE;
-  --color-primary: #ECECEC;
+  --top-btn: #ececec;
+  --color-primary: #eeeeee;
+  --color-primary: #ececec;
   --color-primary-inverse: #191d21;
-  --color-secondary: #27AE60;
-  --color-secondary1: #FFEA20;
-  --color-secondary1: #2B3A55;
-  --color-secondary2: #FB2576;
+  --color-secondary: #27ae60;
+  --color-secondary1: #ffea20;
+  --color-secondary1: #2b3a55;
+  --color-secondary2: #fb2576;
   --color-secondary2: #500073;
-  --color-secondary2: #8B5DFF;
-  --color-secondary2: #16C47F;
-  --color-secondary2: #4335A7;
-  --color-secondary2: #A294F9;
+  --color-secondary2: #8b5dff;
+  --color-secondary2: #16c47f;
+  --color-secondary2: #4335a7;
+  --color-secondary2: #a294f9;
   --color-white: #454e56;
   --color-black: #000;
-  --color-grey-50: #F1D4E5;
+  --color-grey-50: #f1d4e5;
   --color-grey-50: #9babb87e;
   --color-grey0: #f8f8f8;
   --color-grey-1: #6c7983;
@@ -96,9 +96,9 @@ html {
   --color-grey-4: #6c7983;
   --color-grey-5: #f8f8f8;
   --color-grey-6: #12181b;
-  --color-p1: #6D67E4;
-  --color-p2: #0014FF;
-  --color-port-link: #FFFFFF;
+  --color-p1: #6d67e4;
+  --color-p2: #0014ff;
+  --color-port-link: #ffffff;
   --box-shadow-port: rgba(100, 100, 111, 0.2);
   --color-read: #497174;
 }
@@ -160,6 +160,7 @@ section {
 
 .sec3 {
   display: block;
+  min-height: auto;
   padding: 3rem 10rem;
   padding-top: 0rem;
   padding-left: 7rem !important;
@@ -167,6 +168,7 @@ section {
 
 .sec4 {
   display: block;
+  min-height: auto;
   padding-top: 0;
 }
 
@@ -272,7 +274,7 @@ section {
   color: #f1c40f;
 }
 .theme-btn .fa-sun {
-  color: #FFC436;
+  color: #ffc436;
 }
 .theme-btn .checkbox-label .ball {
   background-color: #fff;
@@ -308,9 +310,16 @@ section {
   top: 0;
   z-index: 1;
   -webkit-clip-path: polygon(0 0, 45% 0, 75% 100%, 0% 100%);
-          clip-path: polygon(0 0, 45% 0, 75% 100%, 0% 100%);
-  -webkit-clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
-          clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+  clip-path: polygon(0 0, 45% 0, 75% 100%, 0% 100%);
+  -webkit-clip-path: polygon(
+    75% 0%,
+    100% 50%,
+    75% 100%,
+    0% 100%,
+    25% 50%,
+    0% 0%
+  );
+  clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
 }
 .header-content .left-header .image {
   border-radius: var(--br-sm-2);
@@ -329,7 +338,7 @@ section {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   transition: all 0.4s ease-in-out;
 }
 .header-content .right-header {
@@ -538,8 +547,8 @@ section {
 }
 .portfolios .portfolio-item {
   padding: 2rem 2rem;
-  background-color: #FFFFFF;
-  background-color: #FEF9F9;
+  background-color: #ffffff;
+  background-color: #fef9f9;
   position: relative;
   border-radius: 10px;
   color: #000;
@@ -615,7 +624,7 @@ section {
   width: 100%;
   height: 200px;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   filter: grayscale(1);
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
@@ -803,6 +812,7 @@ section {
 
 .main-title {
   text-align: center;
+  padding: 3.5rem 0;
 }
 .main-title h2 {
   position: relative;
@@ -1120,4 +1130,4 @@ section {
     bottom: 12%;
     right: 5.5%;
   }
-}/*# sourceMappingURL=style.css.map */
+} /*# sourceMappingURL=style.css.map */
